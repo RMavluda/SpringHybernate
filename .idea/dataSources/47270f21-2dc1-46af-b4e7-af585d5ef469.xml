@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.51">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>814</IntrospectionStateNumber>
+      <IntrospectionStateNumber>824</IntrospectionStateNumber>
       <ServerVersion>15.1</ServerVersion>
       <StartupTime>1709007594</StartupTime>
       <TimeZones>true ACDT
@@ -801,7 +801,7 @@ false posixrules
 13206||10|C|G
 13206||-9223372036854775808|U|G
 13206||10|U|G</Grants>
-      <IntrospectionStateNumber>814</IntrospectionStateNumber>
+      <IntrospectionStateNumber>824</IntrospectionStateNumber>
       <ObjectId>16434</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4223,76 +4223,144 @@ false posixrules
     <schema id="263" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>814</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-02-27.07:02:31</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>824</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-02-27.09:45:42</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <sequence id="264" parent="263" name="employees_employee_id_seq">
-      <DasType>bigint|0s</DasType>
-      <ObjectId>24583</ObjectId>
+    <sequence id="264" parent="263" name="details_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>24587</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>792</StateNumber>
+      <StateNumber>821</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <table id="265" parent="263" name="employees">
-      <ObjectId>16435</ObjectId>
-      <StateNumber>792</StateNumber>
+    <sequence id="265" parent="263" name="employees_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>24594</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>821</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <table id="266" parent="263" name="details">
+      <ObjectId>24588</ObjectId>
+      <StateNumber>823</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="266" parent="265" name="employee_id">
+    <table id="267" parent="263" name="employees">
+      <ObjectId>24595</ObjectId>
+      <StateNumber>821</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="268" parent="266" name="details_id">
       <DasType>bigint|0s</DasType>
-      <IdentityKind>always</IdentityKind>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>792</StateNumber>
-      <SequenceId>24583</SequenceId>
+      <StateNumber>823</StateNumber>
+      <SequenceId>24587</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="267" parent="265" name="org_name">
-      <DasType>varchar(50)|0s</DasType>
-      <NotNull>1</NotNull>
+    <column id="269" parent="266" name="city">
+      <DasType>varchar(15)|0s</DasType>
       <Position>2</Position>
-      <StateNumber>782</StateNumber>
+      <StateNumber>821</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="268" parent="265" name="surname">
-      <DasType>varchar(50)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StateNumber>782</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="269" parent="265" name="department">
+    <column id="270" parent="266" name="phone_number">
       <DasType>varchar(25)|0s</DasType>
-      <Position>4</Position>
-      <StateNumber>782</StateNumber>
+      <Position>3</Position>
+      <StateNumber>821</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="270" parent="265" name="salary">
-      <DasType>integer|0s</DasType>
-      <Position>5</Position>
-      <StateNumber>782</StateNumber>
-      <TypeId>23</TypeId>
+    <column id="271" parent="266" name="email">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>821</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
-    <index id="271" parent="265" name="employees_pkey">
-      <ColNames>employee_id</ColNames>
+    <index id="272" parent="266" name="details_pkey">
+      <ColNames>details_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24577</ObjectId>
+      <ObjectId>24607</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>792</StateNumber>
+      <StateNumber>823</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="272" parent="265" name="employees_pkey">
+    <key id="273" parent="266" name="details_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24578</ObjectId>
+      <ObjectId>24608</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>792</StateNumber>
-      <UnderlyingIndexId>24577</UnderlyingIndexId>
+      <StateNumber>823</StateNumber>
+      <UnderlyingIndexId>24607</UnderlyingIndexId>
+    </key>
+    <column id="274" parent="267" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;employees_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>821</StateNumber>
+      <SequenceId>24594</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="275" parent="267" name="name">
+      <DasType>varchar(15)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>821</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="276" parent="267" name="surname">
+      <DasType>varchar(25)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>821</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="277" parent="267" name="department">
+      <DasType>varchar(20)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>821</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="278" parent="267" name="salary">
+      <DasType>integer|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>821</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="279" parent="267" name="details_id">
+      <DasType>integer|0s</DasType>
+      <Position>6</Position>
+      <StateNumber>821</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="280" parent="267" name="employees_details_id_fkey">
+      <ColNames>details_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>24609</ObjectId>
+      <StateNumber>823</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>24588</RefTableId>
+    </foreign-key>
+    <index id="281" parent="267" name="employees_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>24599</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>821</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="282" parent="267" name="employees_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>24600</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>821</StateNumber>
+      <UnderlyingIndexId>24599</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>
