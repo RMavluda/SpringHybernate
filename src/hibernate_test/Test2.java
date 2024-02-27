@@ -1,3 +1,5 @@
+//------------Add JAVA objects in DB-----------------//
+
 package hibernate_test;
 
 import hibernate_test.Entity.Employee;

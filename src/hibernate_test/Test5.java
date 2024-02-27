@@ -1,5 +1,4 @@
-//-----------Receiving JAVA objects in DB-----------//
-
+//-------------Delete JAVA objects in DB-------------//
 
 package hibernate_test;
 
@@ -8,9 +7,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import java.util.List;
-
-public class Test3 {
+public class Test5 {
     public static void main(String[] args) {
         SessionFactory factory = new Configuration()
                 .configure("spring_introduction/hibernate.cfg.xml")
@@ -19,18 +16,10 @@ public class Test3 {
    try {
         Session session = factory.getCurrentSession();
         session.beginTransaction();
+//        Employee emp = session.get(Employee.class, 1);
+//        session.delete(emp);
 
-        //create query
-//       List<Employee> emps = session.createQuery("from Employee")
-//                       .getResultList();
 
-       List<Employee> emps = session.createQuery("from Employee " +
-                       "where name = 'Temur' AND salary>550")
-                        .getResultList();
-
-       for(Employee e: emps){
-            System.out.println(e);
-        }
         session.getTransaction().commit();
 
         System.out.println("!!DONE!!");

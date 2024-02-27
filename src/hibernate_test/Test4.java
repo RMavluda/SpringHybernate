@@ -1,3 +1,5 @@
+//-------------Update JAVA objects in DB-------------//
+
 package hibernate_test;
 
 import hibernate_test.Entity.Employee;
@@ -16,7 +18,11 @@ public class Test4 {
    try {
         Session session = factory.getCurrentSession();
         session.beginTransaction();
+//        Employee emp = session.get(Employee.class, 1);
+//        emp.setSalary(1500);
 
+       session.createQuery("update Employee set salary=1000 " +
+               "where name = 'Temur'").executeUpdate();
 
         session.getTransaction().commit();
 
