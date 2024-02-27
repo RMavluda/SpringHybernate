@@ -1,4 +1,4 @@
-//-------------Delete JAVA objects in DB-------------//
+//-------------Removing Java objects from the database-------------//
 
 package hibernate_test;
 
@@ -19,6 +19,8 @@ public class Test5 {
 //        Employee emp = session.get(Employee.class, 1);
 //        session.delete(emp);
 
+       session.createQuery("delete Employee " +
+               "where name = 'Sofiya'").executeUpdate();
 
         session.getTransaction().commit();
 
