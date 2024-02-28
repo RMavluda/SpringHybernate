@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4fe393b-d0d4-47c1-ab58-1f83ba3a90e4" name="Changes" comment="" />
+    <list default="true" id="b4fe393b-d0d4-47c1-ab58-1f83ba3a90e4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate_test/Entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_test/Entity/Employee.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -24,6 +28,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -35,51 +42,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.App.executor": "Run",
-    "Application.Test1.executor": "Run",
-    "Application.Test2.executor": "Run",
-    "Application.Test3.executor": "Run",
-    "Application.Test4.executor": "Run",
-    "Application.Test5.executor": "Run",
-    "Application.hibernate_one_to_many_bi.Test1.executor": "Run",
-    "Application.hybernate_test2.Test1.executor": "Run",
-    "Application.hybernate_test2.Test2.executor": "Run",
-    "Docker.../docker-compose-db.yml: Compose Deployment.executor": "Run",
-    "Docker.Telegram Desktop/docker-compose-db.yml: Compose Deployment.executor": "Run",
-    "JUnit.All in spring_course (1).executor": "Debug",
-    "JUnit.All in spring_course (2).executor": "Run",
-    "JUnit.All in spring_course.executor": "Debug",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.spring_course [clean].executor": "Run",
-    "Maven.spring_course [compile].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "D:/Backend/spring_course/src/main/java",
-    "last_opened_file_path": "D:/Backend/spring_course",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.hibernate_one_to_many_bi.Test1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.hybernate_test2.Test1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.hybernate_test2.Test2.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.../docker-compose-db.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Telegram Desktop/docker-compose-db.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in spring_course (1).executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.All in spring_course (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in spring_course.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring_course [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring_course [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/Backend/spring_course/src/main/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Backend/spring_course&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="hibernate_one_to_many_uni.entity" />
@@ -90,6 +99,7 @@
       <recent name="D:\Backend\spring_course\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="hibernate_many_to_many" />
       <recent name="hibernate_test" />
       <recent name="hibernate_test.Entity" />
     </key>
@@ -101,13 +111,13 @@
       <recent name="hybernate_test2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.hibernate_one_to_many_bi.Test1">
-    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hibernate_one_to_many_uni.Test1" />
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_many_to_many.Test" />
       <module name="spring_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hibernate_one_to_many_uni.*" />
+          <option name="PATTERN" value="hibernate_many_to_many.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hibernate_test.Test3" />
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_one_to_many_uni.Test1" />
       <module name="spring_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hibernate_test.*" />
+          <option name="PATTERN" value="hibernate_one_to_many_uni.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,26 +178,25 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Test" />
       <item itemvalue="Application.Test1" />
       <item itemvalue="Application.hibernate_one_to_many_bi.Test1" />
       <item itemvalue="Application.Test4" />
       <item itemvalue="Application.Test5" />
-      <item itemvalue="Application.Test3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.hibernate_one_to_many_bi.Test1" />
         <item itemvalue="Application.Test1" />
         <item itemvalue="Application.Test5" />
         <item itemvalue="Application.Test4" />
-        <item itemvalue="Application.Test3" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
         <option value="jdk-17.0.10-liberica-17.0.10-4caba194b151-82b4eb4b" />
       </set>
     </attachedChunks>
@@ -213,7 +222,11 @@
       <workItem from="1709016189838" duration="90000" />
       <workItem from="1709016292064" duration="168000" />
       <workItem from="1709016487357" duration="16128000" />
-      <workItem from="1709095362020" duration="9384000" />
+      <workItem from="1709095362020" duration="12431000" />
+      <workItem from="1709113817764" duration="2145000" />
+      <workItem from="1709116243221" duration="54000" />
+      <workItem from="1709116381805" duration="301000" />
+      <workItem from="1709117044035" duration="203000" />
     </task>
     <servers />
   </component>
