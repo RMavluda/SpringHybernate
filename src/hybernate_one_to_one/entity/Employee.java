@@ -1,4 +1,4 @@
-package hybernate_test2.entity;
+package hybernate_one_to_one.entity;
 
 import jakarta.persistence.*;
 
@@ -19,7 +19,7 @@ public class Employee {
     private int salary;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "details_id")
+    @JoinColumn(name = "det_id")
     private Detail empDetail;
     public Employee() {
     }

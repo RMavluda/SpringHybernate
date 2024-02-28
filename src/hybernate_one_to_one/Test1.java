@@ -1,7 +1,7 @@
-package hybernate_test2;
+package hybernate_one_to_one;
 
-import hybernate_test2.entity.Detail;
-import hybernate_test2.entity.Employee;
+import hybernate_one_to_one.entity.Detail;
+import hybernate_one_to_one.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

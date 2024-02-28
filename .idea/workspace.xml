@@ -5,12 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4fe393b-d0d4-47c1-ab58-1f83ba3a90e4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/22aa9408-abb4-4b7d-9cb8-96f0ff46b224.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/22aa9408-abb4-4b7d-9cb8-96f0ff46b224/storage_v2/_src_/database/demo_db.WoR8XA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/22aa9408-abb4-4b7d-9cb8-96f0ff46b224/storage_v2/_src_/database/demo_db.WoR8XA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/22aa9408-abb4-4b7d-9cb8-96f0ff46b224/storage_v2/_src_/database/demo_db.WoR8XA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/22aa9408-abb4-4b7d-9cb8-96f0ff46b224/storage_v2/_src_/database/demo_db.WoR8XA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/entity/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hybernate_one_to_one/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/hibernate_one_to_many_bi/Test1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/hibernate_one_to_many_bi/entity/Department.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/hibernate_one_to_many_bi/entity/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/hybernate_one_to_one/Test2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/hybernate_one_to_one/entity/Detail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/47270f21-2dc1-46af-b4e7-af585d5ef469.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/47270f21-2dc1-46af-b4e7-af585d5ef469.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/47270f21-2dc1-46af-b4e7-af585d5ef469/storage_v2/_src_/database/demo_db.WoR8XA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/47270f21-2dc1-46af-b4e7-af585d5ef469/storage_v2/_src_/database/demo_db.WoR8XA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hybernate_test2/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hybernate_test2/Test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hybernate_test2/entity/Detail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hybernate_test2/entity/Detail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hybernate_test2/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hybernate_test2/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_course.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_course.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate_test/Test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_test/Test4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hybernate_test2/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hybernate_one_to_one/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hybernate_test2/Test2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hybernate_test2/entity/Detail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hybernate_one_to_one/entity/Detail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hybernate_test2/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hybernate_one_to_one/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate_test/Test4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate_test/Test4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hybernate_test2/Test1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hybernate_one_to_one/Test1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hybernate_test2/entity/Detail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hybernate_test2/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hybernate_one_to_one/entity/Employee.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +73,9 @@
     "Application.Test3.executor": "Run",
     "Application.Test4.executor": "Run",
     "Application.Test5.executor": "Run",
+    "Application.hibernate_one_to_many_bi.Test1.executor": "Run",
     "Application.hybernate_test2.Test1.executor": "Run",
+    "Application.hybernate_test2.Test2.executor": "Run",
     "Docker.../docker-compose-db.yml: Compose Deployment.executor": "Run",
     "Docker.Telegram Desktop/docker-compose-db.yml: Compose Deployment.executor": "Run",
     "JUnit.All in spring_course (1).executor": "Debug",
@@ -95,17 +120,19 @@
       <recent name="hibernate_test.Entity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hibernate_one_to_many_bi.entity" />
+      <recent name="hibernate_one_to_many_bi" />
       <recent name="hybernate_test2" />
       <recent name="hibernate_test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.hybernate_test2.Test1">
+  <component name="RunManager" selected="Application.hibernate_one_to_many_bi.Test1">
     <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hibernate_test.Test2" />
+      <option name="MAIN_CLASS_NAME" value="hybernate_one_to_one.Test2" />
       <module name="spring_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hibernate_test.*" />
+          <option name="PATTERN" value="hybernate_one_to_one.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,12 +179,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="hybernate_test2.Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hybernate_test2.Test1" />
+    <configuration name="hibernate_one_to_many_bi.Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_one_to_many_bi.Test1" />
       <module name="spring_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hybernate_test2.*" />
+          <option name="PATTERN" value="hibernate_one_to_many_bi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,19 +193,18 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Test2" />
+      <item itemvalue="Application.hibernate_one_to_many_bi.Test1" />
       <item itemvalue="Application.Test4" />
       <item itemvalue="Application.Test5" />
-      <item itemvalue="Application.hybernate_test2.Test1" />
       <item itemvalue="Application.Test3" />
-      <item itemvalue="Application.Test2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.hybernate_test2.Test1" />
+        <item itemvalue="Application.hibernate_one_to_many_bi.Test1" />
         <item itemvalue="Application.Test5" />
         <item itemvalue="Application.Test4" />
         <item itemvalue="Application.Test3" />
-        <item itemvalue="Application.Test2" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +236,8 @@
       <workItem from="1709011746664" duration="364000" />
       <workItem from="1709016189838" duration="90000" />
       <workItem from="1709016292064" duration="168000" />
-      <workItem from="1709016487357" duration="10348000" />
+      <workItem from="1709016487357" duration="16128000" />
+      <workItem from="1709095362020" duration="2944000" />
     </task>
     <servers />
   </component>
@@ -230,6 +257,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="org.hibernate.query.SyntaxException" package="org.hibernate.query" />
           <option name="timeStamp" value="4" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.hibernate.AnnotationException" package="org.hibernate" />
+          <option name="timeStamp" value="15" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/hibernate_test/Entity/Employee.java</url>
