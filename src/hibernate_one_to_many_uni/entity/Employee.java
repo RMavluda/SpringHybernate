@@ -1,6 +1,5 @@
-package hibernate_one_to_many_bi.entity;
+package hibernate_one_to_many_uni.entity;
 
-import hybernate_one_to_one.entity.Detail;
 import jakarta.persistence.*;
 
 @Entity
@@ -17,15 +16,10 @@ public class Employee {
     @Column(name="salary")
     private int salary;
 
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.DETACH
-            , CascadeType.REFRESH, CascadeType.MERGE})
-    @JoinColumn(name="dep_id")
-    private Department department;
-
     public Employee() {
     }
 
-    public Employee( String firstName, String surname, int salary) {
+    public Employee(String firstName, String surname, int salary) {
         this.firstName = firstName;
         this.surname = surname;
         this.salary = salary;
@@ -63,14 +57,6 @@ public class Employee {
         this.salary = salary;
     }
 
-    public Department getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(Department department) {
-        this.department = department;
-    }
-
     @Override
     public String toString() {
         return "Employee{" +
@@ -80,4 +66,6 @@ public class Employee {
                 ", salary=" + salary +
                 '}';
     }
+
 }
+
