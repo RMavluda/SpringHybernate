@@ -1,2 +1,4 @@
 /target/
 /.idea/
+/target/classes/hibernate_one_to_many_bi/
+/target/classes/hibernate_one_to_many_uni/
