@@ -7,6 +7,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import java.sql.SQLOutput;
+
 public class Test1 {
     public static void main(String[] args) {
         SessionFactory factory = new Configuration()
@@ -17,12 +19,15 @@ public class Test1 {
     Session session = null;
    try {
 //       session = factory.getCurrentSession();
-//       Department dep = new Department("IT",300, 1200);
-//       Employee emp1 = new Employee("Mavluda", "Raximquli", 800);
-//       Employee emp2 = new Employee("Mastura", "Safarbek", 1000);
+//       Department dep = new Department("QA Testers",500, 1500);
+//       Employee emp1 = new Employee("Leyla", "Farhad", 800);
+//       Employee emp2 = new Employee("Mona", "Kamil", 1000);
+//       Employee emp3 = new Employee("Umi", "Soat", 700);
 //
 //       dep.addEmployeeToDepartment(emp1);
 //       dep.addEmployeeToDepartment(emp2);
+//       dep.addEmployeeToDepartment(emp3);
+//
 //
 //       session.beginTransaction();
 //       session.save(dep);
@@ -31,26 +36,30 @@ public class Test1 {
 //       session.getTransaction().commit();
 //       System.out.println("DONE!");
 //**********************************************************************************
-//       session = factory.getCurrentSession();
-//       session.beginTransaction();
-//
-//       Department department = session.get(Department.class, 1);
-//
-//       System.out.println(department);
-//       System.out.println(department.getEmps());
-//
-//       session.getTransaction().commit();
-//       System.out.println("DONE!");
-//**********************************************************************************
        session = factory.getCurrentSession();
        session.beginTransaction();
 
-       Employee employee = session.get(Employee.class, 4);
+       System.out.println("Get department");
+       Department department = session.get(Department.class, 7);
 
-       session.delete(employee);
+       System.out.println("Show department");
+       System.out.println(department);
+
+       System.out.println("Show employees of the department");
+       System.out.println(department.getEmps());
 
        session.getTransaction().commit();
        System.out.println("DONE!");
+//**********************************************************************************
+//       session = factory.getCurrentSession();
+//       session.beginTransaction();
+//
+//       Employee employee = session.get(Employee.class, 4);
+//
+//       session.delete(employee);
+//
+//       session.getTransaction().commit();
+//       System.out.println("DONE!");
     }
     finally {
        session.close();
