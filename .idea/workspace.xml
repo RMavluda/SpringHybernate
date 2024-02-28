@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4fe393b-d0d4-47c1-ab58-1f83ba3a90e4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate_test/Entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_test/Entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate_many_to_many/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_many_to_many/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate_many_to_many/entity/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_many_to_many/entity/Child.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate_many_to_many/entity/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_many_to_many/entity/Section.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,56 +44,61 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test4.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test5.executor&quot;: &quot;Run&quot;,
-    &quot;Application.hibernate_one_to_many_bi.Test1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.hybernate_test2.Test1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.hybernate_test2.Test2.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.../docker-compose-db.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Telegram Desktop/docker-compose-db.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in spring_course (1).executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.All in spring_course (2).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in spring_course.executor&quot;: &quot;Debug&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring_course [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring_course [compile].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/Backend/spring_course/src/main/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Backend/spring_course&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Application.App.executor": "Run",
+    "Application.Test.executor": "Run",
+    "Application.Test1.executor": "Run",
+    "Application.Test2.executor": "Run",
+    "Application.Test3.executor": "Run",
+    "Application.Test4.executor": "Run",
+    "Application.Test5.executor": "Run",
+    "Application.hibernate_one_to_many_bi.Test1.executor": "Run",
+    "Application.hybernate_test2.Test1.executor": "Run",
+    "Application.hybernate_test2.Test2.executor": "Run",
+    "Docker.../docker-compose-db.yml: Compose Deployment.executor": "Run",
+    "Docker.Telegram Desktop/docker-compose-db.yml: Compose Deployment.executor": "Run",
+    "JUnit.All in spring_course (1).executor": "Debug",
+    "JUnit.All in spring_course (2).executor": "Run",
+    "JUnit.All in spring_course.executor": "Debug",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.spring_course [clean].executor": "Run",
+    "Maven.spring_course [compile].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ide.FileNotInSourceRootChecker.no.check": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "D:/Backend/spring_course/src/main/java",
+    "last_opened_file_path": "D:/Backend/spring_course/src/hibernate_many_to_many/entity",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="hibernate_one_to_many_uni.entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Backend\spring_course\src\hibernate_many_to_many\entity" />
+      <recent name="D:\Backend\spring_course\src\hibernate_many_to_many" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Backend\spring_course\src\spring_introduction" />
@@ -226,7 +233,8 @@
       <workItem from="1709113817764" duration="2145000" />
       <workItem from="1709116243221" duration="54000" />
       <workItem from="1709116381805" duration="301000" />
-      <workItem from="1709117044035" duration="203000" />
+      <workItem from="1709117044035" duration="979000" />
+      <workItem from="1709118044923" duration="3450000" />
     </task>
     <servers />
   </component>
@@ -264,6 +272,11 @@
               </option>
               <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
             </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
           </value>
         </entry>
       </map>

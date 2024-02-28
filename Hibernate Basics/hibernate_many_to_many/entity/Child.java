@@ -17,8 +17,15 @@ public class Child {
     private String firsName;
     @Column(name="age")
     private int age;
-
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE
+            , CascadeType.REFRESH, CascadeType.DETACH})
+    @JoinTable(
+            name = "child_section"
+            , joinColumns = @JoinColumn(name = "child_id")
+            , inverseJoinColumns = @JoinColumn(name = "section_id")
+    )
     private List<Section> sections;
+
 
     public Child(){
 
