@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4fe393b-d0d4-47c1-ab58-1f83ba3a90e4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/Test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/entity/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate_one_to_many_bi/Test1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate_one_to_many_bi/Test1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate_one_to_many_bi/entity/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate_one_to_many_bi/entity/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate_one_to_many_bi/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate_one_to_many_bi/entity/Employee.class" afterDir="false" />
-    </list>
+    <list default="true" id="b4fe393b-d0d4-47c1-ab58-1f83ba3a90e4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -221,7 +213,7 @@
       <workItem from="1709016189838" duration="90000" />
       <workItem from="1709016292064" duration="168000" />
       <workItem from="1709016487357" duration="16128000" />
-      <workItem from="1709095362020" duration="9063000" />
+      <workItem from="1709095362020" duration="9384000" />
     </task>
     <servers />
   </component>
